@@ -1,0 +1,222 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Opiniones de clientes de Punto Creativo - Imprenta en Yapacani. Testimonios reales y experiencia de atencion."
+    />
+    <title>Opiniones | Punto Creativo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="page-opiniones">
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="Punto Creativo">
+          <span class="brand-mark" aria-hidden="true">
+            <img class="brand-logo" src="./assets/logo.png" alt="" />
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">Punto Creativo</span>
+            <span class="brand-subtitle">Imprenta · Yapacan&iacute;</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navegaci&oacute;n principal">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+            <span class="nav-toggle-bars" aria-hidden="true"></span>
+            <span class="sr-only">Abrir men&uacute;</span>
+          </button>
+          <div id="menu" class="nav-links">
+            <a href="./servicios.html">Servicios</a>
+            <a href="./trabajos.html">Trabajos</a>
+            <a class="is-active" href="./opiniones.html">Opiniones</a>
+            <a href="./contacto.html">Contacto</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="section section-opiniones">
+        <div class="container">
+          <div class="opiniones-hero">
+            <p class="opiniones-pill">Experiencias de clientes</p>
+            <h1>La confianza se construye con resultados reales</h1>
+            <p>
+              Cada testimonio refleja nuestro compromiso con la calidad, la rapidez y la buena atenci&oacute;n.
+              Este espacio te ayuda a conocer c&oacute;mo trabajamos antes de cotizar.
+            </p>
+
+            <div class="opiniones-metrics" role="list" aria-label="Resumen de opiniones">
+              <div class="opiniones-metric" role="listitem">
+                <strong>Atencion cercana</strong>
+                <span>Acompanamiento desde idea hasta entrega.</span>
+              </div>
+              <div class="opiniones-metric" role="listitem">
+                <strong>Calidad visible</strong>
+                <span>Color, material y acabado bien logrados.</span>
+              </div>
+              <div class="opiniones-metric" role="listitem">
+                <strong>Entrega puntual</strong>
+                <span>Produccion ordenada para tu fecha clave.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="opiniones-headline">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <p>Testimonios de negocios y emprendedores que ya imprimieron con Punto Creativo.</p>
+          </div>
+
+          <div id="reviews-list" class="testimonials testimonials-opiniones">
+            <figure class="quote quote-opinion">
+              <div class="quote-stars" aria-hidden="true">★★★★★</div>
+              <blockquote>
+                “Me atendieron r&aacute;pido y el material sali&oacute; con colores s&uacute;per vivos. Recomendado.”
+              </blockquote>
+              <figcaption>
+                <span class="quote-name">Cliente local</span>
+                <span class="quote-role">Yapacan&iacute;</span>
+              </figcaption>
+            </figure>
+
+            <figure class="quote quote-opinion">
+              <div class="quote-stars" aria-hidden="true">★★★★★</div>
+              <blockquote>
+                “Me ayudaron con el dise&ntilde;o y la impresi&oacute;n qued&oacute; excelente. Buena relaci&oacute;n precio/calidad.”
+              </blockquote>
+              <figcaption>
+                <span class="quote-name">Emprendedora</span>
+                <span class="quote-role">Comercio local</span>
+              </figcaption>
+            </figure>
+
+            <figure class="quote quote-opinion">
+              <div class="quote-stars" aria-hidden="true">★★★★★</div>
+              <blockquote>
+                “Tarjetas y banner listos a tiempo para mi apertura. Muy buena atenci&oacute;n.”
+              </blockquote>
+              <figcaption>
+                <span class="quote-name">Negocio local</span>
+                <span class="quote-role">Yapacan&iacute;</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="review-box">
+            <h3>Deja tu reseña</h3>
+            <p>Comparte tu experiencia para ayudar a otros clientes a decidir.</p>
+
+            <form class="review-form" data-review-form novalidate>
+              <div class="review-grid">
+                <label class="review-field">
+                  <span>Nombre</span>
+                  <input type="text" name="name" required minlength="2" maxlength="50" placeholder="Tu nombre" />
+                </label>
+
+                <label class="review-field">
+                  <span>Negocio (opcional)</span>
+                  <input type="text" name="business" maxlength="60" placeholder="Nombre de tu negocio" />
+                </label>
+
+                <label class="review-field">
+                  <span>Ciudad (opcional)</span>
+                  <input type="text" name="city" maxlength="40" placeholder="Ej: Yapacani" />
+                </label>
+
+                <label class="review-field">
+                  <span>Calificacion</span>
+                  <select name="rating" required>
+                    <option value="5">5 - Excelente</option>
+                    <option value="4">4 - Muy buena</option>
+                    <option value="3">3 - Buena</option>
+                    <option value="2">2 - Regular</option>
+                    <option value="1">1 - Mala</option>
+                  </select>
+                </label>
+
+                <label class="review-field review-field-full">
+                  <span>Tu reseña</span>
+                  <textarea
+                    name="message"
+                    required
+                    minlength="12"
+                    maxlength="400"
+                    rows="4"
+                    placeholder="Cuentanos como fue tu experiencia..."
+                  ></textarea>
+                </label>
+              </div>
+
+              <div class="review-actions">
+                <button class="btn btn-primary" type="submit">Publicar reseña</button>
+                <p class="review-status" data-review-status aria-live="polite"></p>
+              </div>
+            </form>
+
+            <p class="review-note">
+              Las reseñas enviadas desde este formulario se guardan en este navegador.
+            </p>
+          </div>
+
+          <div class="opiniones-note">
+            <p>
+              Si ya trabajaste con nosotros, tu opini&oacute;n tambi&eacute;n puede estar aqu&iacute;.
+              Nos ayuda a seguir mejorando cada entrega.
+            </p>
+          </div>
+
+          <div class="opiniones-cta">
+            <div class="opiniones-cta-copy">
+              <h3>Quieres dejar tu testimonio o pedir una cotizacion?</h3>
+              <p>Escribenos por WhatsApp y te respondemos rapido.</p>
+            </div>
+            <div class="opiniones-cta-actions">
+              <a class="btn btn-primary" data-whatsapp href="./contacto.html">Dejar mensaje</a>
+              <a class="btn btn-ghost" href="./trabajos.html">Ver trabajos</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="brand-mark" aria-hidden="true">
+            <img class="brand-logo" src="./assets/logo.png" alt="" />
+          </div>
+          <div>
+            <div class="footer-name">Punto Creativo</div>
+            <div class="footer-sub">Imprenta en Yapacan&iacute;</div>
+          </div>
+        </div>
+
+        <div class="footer-links" aria-label="Enlaces de pie de p&aacute;gina">
+          <a href="./servicios.html">Servicios</a>
+          <a href="./trabajos.html">Trabajos</a>
+          <a href="./contacto.html">Contacto</a>
+        </div>
+
+        <div class="footer-meta">
+          <span>&copy; <span id="year"></span> Punto Creativo</span>
+          <span class="sep" aria-hidden="true">·</span>
+          <span>Hecho para imprimir m&aacute;s</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
